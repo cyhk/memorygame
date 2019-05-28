@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Memory Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="memgamestyles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+</head>
+
+<body onload="startGame()">
+  <h1 id="title">
+    Memory Game
+  </h1>
+  <div class="container">
+    <div class="game-side">
+    </div>
+    <div class="stats-and-settings-side">
+      <div id="stats">
+        <h1 class="score">
+          Score
+        </h1>
+        <h1 class="score" id="scoreVal">
+          0
+        </h1>
+        <p id="highscore">
+          High Score:
+        </p>
+      </div>
+      <div id="settings">
+        <form id="difficulty">
+            <input type="radio" class="diffSelect" name="diffLevel" value="easy">Easy<br>
+            <input type="radio" class="diffSelect" name="diffLevel" value="medium" checked>Medium<br>
+            <input type="radio" class="diffSelect" name="diffLevel" value="hard">Impossible<br>
+          <br>
+          <button id="newGame" type="button" onclick="startGame()">New Game</button><br />
+        </form>
+        <br>
+      </div>
+    </div>
+  </div>
+  <script src="memgame.js"></script>
+</body>
+
+</html>
